@@ -1,0 +1,43 @@
+.text-section {
+  background-color: darkgray;
+  padding: 10px 30px;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-head {
+  margin-bottom: 100px;
+  font-size: 3rem;
+}
+
+.login-btn {
+  margin-top: 50px;
+  width: 280px;
+  background-color: rgba(230, 126, 34, 1);
+  color: black;
+  font-weight: 500;
+}
+
+.signup-btn {
+  width: 280px;
+  background-color: rgba(230, 126, 34, 1);
+  color: black;
+  font-weight: 500;
+}
