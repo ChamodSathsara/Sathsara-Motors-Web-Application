@@ -240,7 +240,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="exampleInputEmail1"
+                id="exNo"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -255,7 +255,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="exampleInputEmail1"
+                id="exDescription"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -270,7 +270,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="exampleInputEmail1"
+                id="exDate"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -285,7 +285,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="exampleInputEmail1"
+                id="exAmount"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -293,10 +293,10 @@
         </div>
 
         <div class="mt-5">
-          <button class="btn btn-danger me-5">Save</button>
-          <button class="btn btn-danger me-5">Delete</button>
-          <button class="btn btn-danger me-5">Update</button>
-          <button class="btn btn-danger me-5">Search</button>
+          <button class="btn btn-danger me-5" id="ex-save">Save</button>
+          <button class="btn btn-danger me-5" id="ex-delete">Delete</button>
+          <button class="btn btn-danger me-5" id="ex-update">Update</button>
+          <button class="btn btn-danger me-5" id="ex-search">Search</button>
         </div>
       </div>
 
@@ -311,26 +311,7 @@
               <th scope="col">Amount</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">E001</th>
-              <td>Electrecity</td>
-              <td>2024/07/25</td>
-              <td>3000</td>
-            </tr>
-            <tr>
-              <th scope="row">E001</th>
-              <td>Electrecity</td>
-              <td>2024/07/25</td>
-              <td>3000</td>
-            </tr>
-            <tr>
-              <th scope="row">E001</th>
-              <td>Electrecity</td>
-              <td>2024/07/25</td>
-              <td>3000</td>
-            </tr>
-          </tbody>
+          <tbody id="ex-table"></tbody>
         </table>
       </div>
     </div>
@@ -344,7 +325,11 @@
 
     <script src="../db/db.js"></script>
     <script src="../js/script.js"></script>
+
     <script src="../Controller/GenerateBillController.js"></script>
+    <script src="../Controller/ExpenditureController.js"></script>
+
     <script src="../model/generatebill.js"></script>
+    <script src="../model/expenditure.js"></script>
   </body>
 </html>

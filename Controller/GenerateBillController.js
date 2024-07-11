@@ -1,5 +1,4 @@
 // ================================================     Save Generate Bill  ==========================================================
-
 function saveBill() {
   let billNo = $("#billNo").val();
   let vehiNum = $("#vehicleNo").val();
