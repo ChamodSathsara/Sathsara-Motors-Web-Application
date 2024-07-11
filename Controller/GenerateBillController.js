@@ -154,3 +154,32 @@ $("#bill-search").click(function (e) {
     alert("this id not a found");
   }
 });
+
+function setPC() {
+  // =========================================== total income
+
+  let totalIncome = 0;
+  for (let i = 0; i < GenerateBillDb.length; i++) {
+    let no = Number(GenerateBillDb[i].finalAmount);
+    totalIncome += no;
+  }
+
+  $("#income").text(totalIncome);
+
+  // ====================================== Total expenditure
+  let totalexpenditure = 0;
+  for (let i = 0; i < ExpenditureDb.length; i++) {
+    let no2 = Number(ExpenditureDb[i].amount);
+    totalexpenditure += no2;
+  }
+
+  $("#expenditureAmount").text(totalexpenditure);
+
+  // ===========================================Profit
+
+  let profit = totalIncome - totalexpenditure;
+
+  $("#profit").text(profit);
+
+  console.log(totalIncome, totalexpenditure, totalIncome);
+}
