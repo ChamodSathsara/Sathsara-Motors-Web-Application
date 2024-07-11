@@ -28,50 +28,53 @@
     <title>Sathsara Motors Login</title>
   </head>
   <body>
-    <div class="login-section container-fluid">
-      <div class="row">
-        <div class="col-6">
-          <img
-            src="../assest/sathsara motors.png"
-            class="p-5"
-            style="width: 100%"
-            alt=""
-          />
-        </div>
-        <div class="col-5 text-side">
-          <div class="text-section">
-            <div class="w-50 form-section">
-              <h1 class="text-head">Login</h1>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label"
-                    >Username</label
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                </div>
-                <div class="mb-3">
-                  <label for="exampleInputPassword1" class="form-label"
-                    >Password</label
-                  >
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                  />
-                </div>
-                <button type="submit" class="btn btn-primary login-btn">
-                  Login</button
-                ><br />
-                <br />
-                <button type="submit" class="btn btn-primary signup-btn">
-                  Signup
-                </button>
-              </form>
+    <!-- ==========================================    Login Page   ================================================ -->
+    <div id="login-page">
+      <div class="login-section container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="../assest/sathsara motors.png"
+              class="p-5"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+          <div class="col-5 text-side">
+            <div class="text-section">
+              <div class="w-50 form-section">
+                <h1 class="text-head">Login</h1>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                    />
+                  </div>
+                  <a href="dashboard.html" class="btn btn-primary login-btn">
+                    Login</a
+                  ><br />
+                  <br />
+                  <button type="submit" class="btn btn-primary signup-btn">
+                    Signup
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -83,5 +86,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <script src="../model/user.js"></script>
+    <script src="../db/db.js"></script>
+    <script src="../Controller/userController.js"></script>
   </body>
 </html>

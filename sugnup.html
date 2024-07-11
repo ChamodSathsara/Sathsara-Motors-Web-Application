@@ -19,15 +19,93 @@
     />
 
     <!-- external css file -->
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/login.css" />
 
     <!-- jQ -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!-- title -->
-    <title>Sathsara Motors dashboard</title>
+    <title>Sathsara Motors signup</title>
   </head>
   <body>
+    <!-- =========================================    SignUp Page     ===========================================-->
+    <div id="signup-page">
+      <div class="login-section container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="../assest/sathsara motors.png"
+              class="p-5"
+              style="width: 100%"
+              alt=""
+            />
+          </div>
+          <div class="col-5 text-side">
+            <div class="text-section">
+              <div class="w-50 form-section">
+                <!-- text Title -->
+                <h1 class="text-head">Signup</h1>
+                <form>
+                  <!-- Username lable -->
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Username</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="sign-username"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <!-- password lable -->
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="sign-password"
+                    />
+                  </div>
+
+                  <!--Confirm password lable -->
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Comfirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="sign-password2"
+                    />
+                  </div>
+
+                  <!-- buttons -->
+                  <button
+                    type="submit"
+                    id="sign-login"
+                    class="btn btn-primary login-btn"
+                  >
+                    Login</button
+                  ><br />
+                  <br />
+                  <a
+                    href="html/login.html"
+                    id="sign-signup"
+                    class="btn btn-primary signup-btn"
+                  >
+                    Signup
+                  </a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ==========================================     Nav Bar Page  ============================================= -->
     <div id="dashboard-page">
       <!-- dashboard nav bar -->
@@ -55,18 +133,12 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  id="dashboard-link"
-                  aria-current="page"
-                  href="#"
+                <a class="nav-link active" aria-current="page" href="#"
                   >Dashboard</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="generatebill-link" href="#"
-                  >Generate Bill</a
-                >
+                <a class="nav-link" href="#">Generate Bill</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Full Repair</a>
@@ -75,9 +147,7 @@
                 <a class="nav-link" href="#">Spair Parts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="expenditure-link" href="#"
-                  >Expenditure</a
-                >
+                <a class="nav-link" href="#">Expenditure</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Customers</a>
@@ -103,7 +173,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="billNo"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -118,7 +188,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="vehicleNo"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -133,7 +203,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="spCost"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -148,7 +218,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="repairCost"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -163,7 +233,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="totalAmount"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -178,7 +248,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="discount"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -193,7 +263,7 @@
               <input
                 type="text"
                 class="form-control d-block"
-                id="finalAmount"
+                id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
             </div>
@@ -201,10 +271,10 @@
         </div>
 
         <div class="mt-5">
-          <button class="btn btn-danger me-5" id="bill-save">Save</button>
-          <button class="btn btn-danger me-5" id="bill-delete">Delete</button>
-          <button class="btn btn-danger me-5" id="bill-update">Update</button>
-          <button class="btn btn-danger me-5" id="bill-search">Search</button>
+          <button class="btn btn-danger me-5">Save</button>
+          <button class="btn btn-danger me-5">Delete</button>
+          <button class="btn btn-danger me-5">Update</button>
+          <button class="btn btn-danger me-5">Search</button>
         </div>
       </div>
 
@@ -220,7 +290,29 @@
               <th scope="col">Final amount</th>
             </tr>
           </thead>
-          <tbody id="bill-table"></tbody>
+          <tbody>
+            <tr>
+              <th scope="row">B001</th>
+              <td>ABD-2012</td>
+              <td>2150</td>
+              <td>3000</td>
+              <td>5150</td>
+            </tr>
+            <tr>
+              <th scope="row">B002</th>
+              <td>ABD-2012</td>
+              <td>2150</td>
+              <td>3000</td>
+              <td>5150</td>
+            </tr>
+            <tr>
+              <th scope="row">B003</th>
+              <td>ABD-2012</td>
+              <td>2150</td>
+              <td>3000</td>
+              <td>5150</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
@@ -341,10 +433,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-
+    <script src="../model/user.js"></script>
     <script src="../db/db.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../Controller/GenerateBillController.js"></script>
-    <script src="../model/generatebill.js"></script>
+    <script src="../Controller/userController.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
